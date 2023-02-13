@@ -1,0 +1,267 @@
+o "Hello, World"
+
+
+
+1.
+
+#!/bin/bash
+
+echo "\"(Ôo)'"
+
+
+
+2.
+
+#!/bin/bash
+
+cat /etc/passwd
+
+
+
+3.
+
+#!/bin/bash
+
+cat /etc/passwd /etc/hosts
+
+
+
+OR
+
+cat /etc/{passwd,hosts}
+
+
+
+4.
+
+#!/bin/bash
+
+tail /etc/passwd
+
+
+
+OR
+
+tail -n 10 /etc/passwd
+
+
+
+5.
+
+#!/bin/bash
+
+head /etc/passwd
+
+
+
+OR 
+
+head -n 10 /etc/passwd
+
+
+
+6.
+
+#!/bin/bash
+
+head -3 iacta | tail -1
+
+
+
+OR 
+
+cat iacta | head -n 3 | tail -n 1
+
+Bes'thor11:10 PM
+
+7.
+
+#!/bin/bash
+
+echo -e "Best School"  >> "\\*\\\\'\"Best School\"\\'\\\\*$\\?\\*\\*\\*\\*\\*:)"
+
+
+
+OR 
+
+echo "Holberton School" > "\*\\\'\"Holberton School\"\'\\\*$\?\*\*\*\*\*:)"
+
+
+
+8.
+
+#!/bin/bash
+
+ls -la >> ls_cwd_content
+
+
+
+9.
+
+#!/bin/bash
+
+tail -1 iacta >> iacta
+
+
+
+OR 
+
+tail -n 1 iacta >> iacta
+
+
+
+10.
+
+#!/bin/bash
+
+find . -type f -name '*.js' -delete
+
+
+
+11.
+
+#!/bin/bash
+
+find -mindepth 1 -type d | wc -l
+
+
+
+OR 
+
+
+
+
+
+12.
+
+#!/bin/bash
+
+ls -t  .  |  head
+
+13.
+
+#!/bin/bash
+
+egrep 'root' /etc/passwd
+
+
+
+OR
+
+sort | uniq -u
+
+
+
+14.
+
+#!/bin/bash
+
+egrep -c 'bin' /etc/passwd
+
+
+
+OR
+
+grep root /etc/passwd
+
+
+
+15.
+
+#!/bin/bash
+
+egrep -c 'bin' /etc/passwd
+
+
+
+OR 
+
+grep bin /etc/passwd | wc -l
+
+
+
+16.
+
+#!/bin/bash
+
+egrep -A 3 'root' /etc/passwd
+
+
+
+OR
+
+grep -A 3 'root' /etc/passwd
+
+
+
+17.
+
+#!/bin/bash
+
+egrep -v 'bin' /etc/passwd
+
+
+
+18.
+
+#!/bin/bash
+
+egrep ^[[:alpha:]] /etc/ssh/sshd_config 
+
+
+
+OR
+
+grep '^[[:upper:]]\|^[[:lower:]]' /etc/ssh/sshd_config
+
+19
+
+#!/bin/bash
+
+tr 'Ac' 'Ze'
+
+
+
+20.
+
+#!/bin/bash
+
+tr -d Cc
+
+
+
+21.
+
+#!/bin/bash
+
+rev
+
+
+
+22.
+
+#!/bin/bash
+
+cut -f 1,6 -d ':' /etc/passwd  |  sort
+
+
+
+23.
+
+#!/bin/bash
+
+find . -empty  |  rev  |cut -d '/' -f 1  |  rev
+
+
+
+OR
+
+find . -empty -printf '%f\n'
+
+
+
+24.
+
+#!/bin/bash
+
+find . -type f -name "*.gif"  |  rev  |  cut -d
